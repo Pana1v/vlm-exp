@@ -35,16 +35,16 @@ After pushing, your GitHub repository should contain:
 - `requirements.txt` - Python dependencies
 - `.gitignore` - Git ignore rules
 
-### 🖼️ Test Images
-- `robot_test_image.jpeg` (renamed from download.jpeg)
-- `mechanical_device_test_image.jpeg` (renamed from images (1).jpeg)
-- `download.jpeg` (original)
-- `images (1).jpeg` (original)
+### 🖼️ Test Images (in `/images` directory)
+- `images/robot_test_image.jpeg` (renamed from download.jpeg)
+- `images/mechanical_device_test_image.jpeg` (renamed from images (1).jpeg)
+- `images/download.jpeg` (original)
+- `images/images (1).jpeg` (original)
 
-### 📊 Generated Visualizations
-- `attention_viz_download.png` - CLIP attention visualization
-- `feature_analysis_download.png` - Layer-wise feature analysis
-- `image_text_matching.png` - Image-text similarity heatmap
+### 📊 Generated Visualizations (in `/images` directory)
+- `images/attention_viz_download.png` - CLIP attention visualization
+- `images/feature_analysis_download.png` - Layer-wise feature analysis
+- `images/image_text_matching.png` - Image-text similarity heatmap
 
 ## Step 4: Add Repository Description
 

@@ -68,10 +68,10 @@ class AdvancedVLMExperiments:
         plt.axis('off')
         
         plt.tight_layout()
-        plt.savefig(f'attention_viz_{image_path.split(".")[0]}.png', dpi=150, bbox_inches='tight')
+        plt.savefig(f'images/attention_viz_{image_path.split("/")[-1].split(".")[0]}.png', dpi=150, bbox_inches='tight')
         plt.show()
         
-        print(f"Attention visualization saved as attention_viz_{image_path.split('.')[0]}.png")
+        print(f"Attention visualization saved as images/attention_viz_{image_path.split('/')[-1].split('.')[0]}.png")
         
     def experiment_multimodal_retrieval(self, image_paths, text_queries):
         """Test multimodal retrieval using CLIP embeddings"""
@@ -261,7 +261,7 @@ class AdvancedVLMExperiments:
         plt.title("Image-Text Matching Scores")
         plt.xticks(rotation=45, ha='right')
         plt.tight_layout()
-        plt.savefig('image_text_matching.png', dpi=150, bbox_inches='tight')
+        plt.savefig('images/image_text_matching.png', dpi=150, bbox_inches='tight')
         plt.show()
         
         return results
@@ -325,7 +325,7 @@ class AdvancedVLMExperiments:
         plt.ylabel("L2 Norm")
         
         plt.tight_layout()
-        plt.savefig(f'feature_analysis_{image_path.split(".")[0]}.png', dpi=150, bbox_inches='tight')
+        plt.savefig(f'images/feature_analysis_{image_path.split("/")[-1].split(".")[0]}.png', dpi=150, bbox_inches='tight')
         plt.show()
         
         return layer_stats
@@ -334,7 +334,7 @@ if __name__ == "__main__":
     experiments = AdvancedVLMExperiments()
     
     # Available images
-    image_paths = ["download.jpeg", "images (1).jpeg"]
+    image_paths = ["images/download.jpeg", "images/images (1).jpeg"]
     
     # Test captions for matching experiment
     test_captions = [

@@ -233,7 +233,7 @@ if __name__ == "__main__":
     experiments = VLMExperiment()
     
     # Test on both available images
-    images = ["download.jpeg", "images (1).jpeg"]
+    images = ["images/download.jpeg", "images/images (1).jpeg"]
     
     for image in images:
         print(f"\n{'='*80}")

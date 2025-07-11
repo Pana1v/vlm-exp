@@ -66,7 +66,7 @@ def generate_caption(image_path, prompt="a picture of"):
     return caption
 
 if __name__ == "__main__":
-    image_file = "download.jpeg"
+    image_file = "images/download.jpeg"
     try:
         caption = generate_caption(image_file)
         print(f"Generated Caption: {caption}")

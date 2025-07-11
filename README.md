@@ -18,11 +18,17 @@ VLM/
 ├── simple_caption.py              # Basic image captioning with CLIP + GPT-2
 ├── vlm_experiments.py             # Comprehensive VLM experiments suite
 ├── advanced_vlm_experiments.py    # Advanced analysis and visualization
-├── download.jpeg                  # Test image 1
-├── images (1).jpeg               # Test image 2
-├── attention_viz_download.png     # Generated attention visualization
-├── feature_analysis_download.png  # Generated feature analysis plots
-├── image_text_matching.png       # Generated matching heatmap
+├── images/                        # Image directory
+│   ├── download.jpeg              # Original test image 1
+│   ├── images (1).jpeg           # Original test image 2
+│   ├── robot_test_image.jpeg      # Primary robot test image
+│   ├── mechanical_device_test_image.jpeg  # Secondary mechanical device image
+│   ├── attention_viz_download.png # Generated attention visualization
+│   ├── feature_analysis_download.png  # Generated feature analysis plots
+│   └── image_text_matching.png   # Generated matching heatmap
+├── requirements.txt               # Python dependencies
+├── .gitignore                    # Git ignore rules
+├── GITHUB_SETUP.md               # GitHub setup instructions
 └── README.md                     # This documentation
 ```
 
@@ -93,7 +99,7 @@ Sophisticated experiments including attention visualization and feature analysis
 - Shows which image regions the model focuses on
 - Generates overlay visualizations
 
-![Attention Visualization](attention_viz_download.png)
+![Attention Visualization](images/attention_viz_download.png)
 
 #### Multimodal Retrieval
 - Tests image-text matching capabilities
@@ -115,14 +121,14 @@ Sophisticated experiments including attention visualization and feature analysis
 - Visualizes cross-modal relationships
 - Quantifies matching performance
 
-![Image-Text Matching](image_text_matching.png)
+![Image-Text Matching](images/image_text_matching.png)
 
 #### Feature Analysis Across Layers
 - Analyzes CLIP features at different depths
 - Tracks feature statistics evolution
 - Visualizes layer-wise representations
 
-![Feature Analysis](feature_analysis_download.png)
+![Feature Analysis](images/feature_analysis_download.png)
 
 **Usage:**
 ```bash
@@ -159,16 +165,16 @@ pip install torch torchvision transformers pillow requests tqdm matplotlib ipywi
 
 ## 🖼️ Test Images
 
-The repository includes test images for experimentation:
-- `robot_test_image.jpeg` - Primary robot/mechanical device test image  
-- `mechanical_device_test_image.jpeg` - Secondary mechanical device test image
-- `download.jpeg` - Original robot image
-- `images (1).jpeg` - Original secondary image
+The repository includes test images for experimentation (located in `/images` directory):
+- `images/robot_test_image.jpeg` - Primary robot/mechanical device test image  
+- `images/mechanical_device_test_image.jpeg` - Secondary mechanical device test image
+- `images/download.jpeg` - Original robot image
+- `images/images (1).jpeg` - Original secondary image
 
 ### Generated Visualizations
-- `attention_viz_download.png` - CLIP attention pattern visualization
-- `feature_analysis_download.png` - Layer-wise feature analysis plots  
-- `image_text_matching.png` - Cross-modal similarity heatmap
+- `images/attention_viz_download.png` - CLIP attention pattern visualization
+- `images/feature_analysis_download.png` - Layer-wise feature analysis plots  
+- `images/image_text_matching.png` - Cross-modal similarity heatmap
 
 ## 🔧 Technical Implementation
 
