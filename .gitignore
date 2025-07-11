@@ -37,6 +37,11 @@ VLM_experiments.ipynb
 
 # Large model files
 sceneflow.pth
+*.pth
+*.pt
+
+# Unrelated files
+*.ipynb
 
 # Virtual environments
 env/
