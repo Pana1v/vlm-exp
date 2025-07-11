@@ -159,9 +159,16 @@ pip install torch torchvision transformers pillow requests tqdm matplotlib ipywi
 
 ## 🖼️ Test Images
 
-The repository includes two test images:
-- `download.jpeg` - Robot/mechanical device image
-- `images (1).jpeg` - Secondary test image
+The repository includes test images for experimentation:
+- `robot_test_image.jpeg` - Primary robot/mechanical device test image  
+- `mechanical_device_test_image.jpeg` - Secondary mechanical device test image
+- `download.jpeg` - Original robot image
+- `images (1).jpeg` - Original secondary image
+
+### Generated Visualizations
+- `attention_viz_download.png` - CLIP attention pattern visualization
+- `feature_analysis_download.png` - Layer-wise feature analysis plots  
+- `image_text_matching.png` - Cross-modal similarity heatmap
 
 ## 🔧 Technical Implementation
 
