@@ -206,10 +206,24 @@ pip install torch torchvision transformers pillow requests tqdm matplotlib ipywi
 ## 🖼️ Test Images
 
 The repository includes test images for experimentation (located in `/images` directory):
-- `images/robot_test_image.jpeg` - Primary robot/mechanical device test image  
-- `images/mechanical_device_test_image.jpeg` - Secondary mechanical device test image
-- `images/download.jpeg` - Original robot image
-- `images/images (1).jpeg` - Original secondary image
+
+### Input Images Used for Inference:
+
+**Image 1: Robot/Mechanical Device**
+![Test Image 1](images/download.jpeg)
+- **File**: `images/download.jpeg` 
+- **BLIP Caption**: "a screenshot of a robot in a room"
+- **CLIP Classification**: "an image of a vehicle" (confidence: 0.458)
+
+**Image 2: Mechanical Device**  
+![Test Image 2](images/images (1).jpeg)
+- **File**: `images/images (1).jpeg`
+- **BLIP Caption**: "a robot with a gun in his hand"
+- **CLIP Classification**: "an image of a vehicle" (confidence: 0.142)
+
+### Additional Copies:
+- `images/robot_test_image.jpeg` - Copy of Image 1 with descriptive name
+- `images/mechanical_device_test_image.jpeg` - Copy of Image 2 with descriptive name
 
 ### Generated Visualizations
 - `images/attention_viz_download.png` - CLIP attention pattern visualization
